@@ -13,11 +13,6 @@
 @section('content')
 
 @if (session('info'))
-    {{-- <div class="alert alert-success">
-        <strong>{{session('info')}}</strong>
-    </div> --}}
-
-   
     <x-adminlte-alert theme="success" title="Listo!!" dismissable>
         <strong>{{session('info')}}</strong>
     </x-adminlte-alert>

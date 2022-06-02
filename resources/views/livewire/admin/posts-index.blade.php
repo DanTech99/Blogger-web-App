@@ -9,8 +9,8 @@
           <thead>
               <tr>
                   <th>ID</th>
-                  <th>name</th>
-                  <th colspan="2"></th>
+                  <th>NAME</th>
+                  <th colspan="1"></th>
               </tr>
           </thead>
   
@@ -20,14 +20,13 @@
                       <td>{{$post->id}}</td>
                       <td>{{$post->name}}</td>
                       <td>
-                          <a class="btn btn-primary btn-sm" href="{{route('admin.posts.edit', $post)}}">editar</a>
+                          <a class="btn btn-primary " href="{{route('admin.posts.edit', $post)}}">editar</a>
                       </td>
                       <td width="10px">
                           <form action="{{route('admin.posts.destroy', $post)}}" method="POST">
                           @method('DELETE')
                           @csrf
-  
-                          <button type="submit" class="btn btn-danger btn-sm">eliminar</button>
+                          <button type="submit" class="btn btn-danger ">eliminar</button>
                           </form>
                       </td>
                   </tr>

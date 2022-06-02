@@ -15,6 +15,12 @@
 
 {{-- contenido --}}
 @section('content')
+
+@if (session('info'))
+    <x-adminlte-alert theme="success" title="Listo!!" dismissable>
+        <strong>{{session('info')}}</strong>
+    </x-adminlte-alert>
+@endif
 @livewire('admin.posts-index')
 @stop
 
