@@ -20,37 +20,6 @@
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
 
-
-        <style>
-            h2.fancy, .ck.ck-button.ck-heading_heading2_fancy {
-            color: #ff0050;
-            font-size: 17px;
-         }
-         .ck-content .text-tiny {
-            font-size: 0.7em;
-        }
-
-        .ck-content .text-small {
-            font-size: 0.85em;
-        }
-
-        .ck-content .text-big {
-            font-size: 1.4em;
-        }
-
-        .ck-content .text-huge {
-            font-size: 1.8em;
-        }
-        a{
-            color: rgb(8, 173, 250)
-        }
-
-
-           /* Styles for the heading in the content and for the dropdown item. */
-   
-        </style>
-  
-       
         <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 
         <script src="/path/or/uri/to/tinymce.min.js" referrerpolicy="origin"></script>

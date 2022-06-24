@@ -3,7 +3,7 @@
     <span class="text-2xl font-[Poppins] cursor-pointer">
       <a href="/">
         <img class=" h-16 lg:h-20 inline"
-        src="http://gesccol.gov.co/assets/images/g.png">
+       src="http://gesccol.gov.co/assets/images/g.png">
       </a>
      
     </span>

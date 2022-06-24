@@ -16,6 +16,7 @@ class PostController extends Controller
         return view('posts.index', compact('posts'));
     }
 
+    //posts relacionados o similares
     public function show(Post $post)
     {
         $similares = Post::where('category_id', $post->category_id)->where('status', 2)
