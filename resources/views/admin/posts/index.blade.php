@@ -21,7 +21,9 @@
         <strong>{{session('info')}}</strong>
     </x-adminlte-alert>
 @endif
+
 @livewire('admin.posts-index')
+
 @stop
 
 

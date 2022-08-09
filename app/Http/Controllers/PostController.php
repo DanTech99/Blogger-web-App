@@ -7,11 +7,20 @@ use Illuminate\Http\Request;
 use App\Models\Category;
 use App\Models\Tag;
 
+use Illuminate\Support\Facades\Cache;
+
 class PostController extends Controller
 {
     public function index()
     {
-        $posts = Post::where('status', 2)->latest('id')->paginate(20);
+        if (Cache::has('posts')) {
+            $posts = Cache::get('posts');
+        } else {
+          $posts = Post::where('status', 2)->latest('id')->paginate(20);
+          Cache::put('posts', $posts); 
+        }
+        
+        
 
         return view('posts.index', compact('posts'));
     }

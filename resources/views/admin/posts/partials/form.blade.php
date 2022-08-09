@@ -24,7 +24,7 @@
 @enderror
 </div>
 
-.<div class="form-group">
+<div class="form-group">
     <p class="font-weight-bold">Estado</p>
 
     <label>
